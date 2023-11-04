@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="./assets/css/themsanpham.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="home.html">
+            <img src="./Img/logo2png.png" alt="" />
+          </a>
+        </div>
+        <div class="search">
+          <input type="text" />
+          <button type="submit">Search</button>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="warehouse.html">Warehouse</a></li>
+            <li><a href="#">Service</a></li>
+          </ul>
+        </nav>
+        <div class="social_icon">
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href="info.html"><i class="fa fa-id-card" aria-hidden="true"></i></a>
+            <a href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+          </div>
+    </header>
+    <div class="add">
+        <div class="tieude">
+            <h1 class="text-center">Đăng Bán Sản Phẩm</h1>
+            <p class="lead text-center">Hãy đăng nhưng thông tin sản phẩm bạn cần bán</p>
+        </div>
+        <div class="add-name">
+            <label for="product_name">Tên Sản Phẩm:</label>
+            <input type="text" id="product_name" name="product_name" required><br><br>
+        </div>
+        <div class="add-mota">
+            <label for="product_description">Mô Tả Sản Phẩm:</label><br>
+        <textarea id="product_description" name="product_description" rows="4" cols="50" required></textarea><br><br>
+        </div>
+        <div class="add-price">
+            <label for="product_price">Giá:</label>
+            <input type="number" id="product_price" name="product_price" required><br><br>
+        </div>
+        <div class="add-sx">
+        <div class="add-trademark">
+          <label for="product_trademark">Chọn Nhãn Hiệu</label>
+          <select id="myComboBox">
+              <option value="Nike">Nike</option>
+              <option value="Adidas">Adidas</option>
+              <option value="Converse">Converse</option>
+              <option value="Puma">Puma</option>
+              <option value="Alexander Mqueen">Alexander Mqueen</option>
+              <option value="New Balence">New Balence</option>
+              <option value="Reebok">Reebok</option>
+          </select>
+      </div>
+        <div class="add-size">
+            <label for="product_size">Chọn Size</label>
+            <select id="myComboBox">
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+            </select>
+        </div>
+        <div class="add-color">
+          <label for="product_color">Chọn Màu</label>
+          <select id="myComboBox">
+            <option value="do">Đỏ</option>
+            <option value="cam">Cam</option>
+            <option value="vang">Vàng</option>
+            <option value="xanhla">Xanh Lá</option>
+            <option value="xanhduong">Xanh Dương</option>
+            <option value="trang">Trắng</option>
+            <option value="Den">Đen</option>
+            <option value="xam">Xám</option>
+        </select>
+        </div>
+      </div>
+        <div class="add-img">
+            <label for="product_image">Hình Ảnh Sản Phẩm:</label>
+            <input type="file" id="product_image" name="product_image"><br><br>
+        </div>
+        <div class="add-button">
+            <input type="submit" value="Thêm Sản Phẩm">
+        </div>
+    
+    </div>  
+</body>
+</html>
