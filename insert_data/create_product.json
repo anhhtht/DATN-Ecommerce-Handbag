@@ -1,0 +1,226 @@
+[
+    {
+        "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/hg4g0nckvqzq1dn1k7d4r/shoes1.png?rlkey=0g7eiloof3dbzp5kealds6ngz&dl=0&fbclid=IwAR2my2NJrwlTdRm5L4S1CdEXq-7WXtJ8HRmPvjPny5_i7v294308VLRmLoM",
+        "brand": "Nike",
+        "title": "Nike Air Max",
+        "color": "#de9a38",
+        "discountedPrice": 499,
+        "price": 1499,
+        "discountPersent": 66,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 30
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 100,
+        "topLavelCategory": "Men",
+        "secondLavelCategory": "Shoe",
+        "thirdLavelCategory": "men_nike",
+        "description": "The Nike Air Max is a stylish and comfortable shoe."
+    },
+    {
+        "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/s4gtldvcycux8ew8ai7oi/shoes2.png?rlkey=7qx67asf6o6pjn12ez7h8kq5b&dl=0",
+        "brand": "Adidas",
+        "title": "Adidas Originals",
+        "color": "#151414",
+        "discountedPrice": 699,
+        "price": 1699,
+        "discountPersent": 77,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 30
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 100,
+        "topLavelCategory": "Men",
+        "secondLavelCategory": "Shoe",
+        "thirdLavelCategory": "men_adidas",
+        "description": "The Adidas Originals is a stylish and comfortable shoe."
+    },
+    {
+        "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/0bsy1tin277f2qu84j2gm/shoes3.png?rlkey=idjr9q2otcovji65rsm2tp8vx&dl=0",
+        "brand": "Puma",
+        "title": "Puma Ignite",
+        "color": "#017cc2",
+        "discountedPrice": 300,
+        "price": 1999,
+        "discountPersent": 99,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 30
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 100,
+        "topLavelCategory": "Men",
+        "secondLavelCategory": "Shoe",
+        "thirdLavelCategory": "men_puma",
+        "description": "The Puma Ignite is a stylish and comfortable shoe."
+    },
+    {
+        "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/h7tyuis2kv5ilvrt4kd9u/shoes4.png?rlkey=mqdjce3l2aao0beb0g6ly7ig8&dl=0",
+        "brand": "Reebok",
+        "title": "Reebok Nano",
+        "color": "#88cce4",
+        "discountedPrice": 399,
+        "price": 1199,
+        "discountPersent": 59,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 30
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 100,
+        "topLavelCategory": "Women",
+        "secondLavelCategory": "Shoe",
+        "thirdLavelCategory": "women_reebok",
+        "description": "The Reebok Nano is a stylish and comfortable shoe."
+    },
+    {
+        "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/0v5p7wmc7grdwooso36kc/shoes5.png?rlkey=q53yx0ul4qe6kjlxe7lbh0rqp&dl=0",
+        "brand": "New Balance",
+        "title": "New Balance Fresh Foam",
+        "color": "#61676c",
+        "discountedPrice": 299,
+        "price": 2199,
+        "discountPersent": 39,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 30
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 100,
+        "topLavelCategory": "Women",
+        "secondLavelCategory": "Shoe",
+        "thirdLavelCategory": "women_new_balance",
+        "description": "The New Balance Fresh Foam is a stylish and comfortable shoe."
+    },
+    {
+        "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/lo9ufamiqemo01vakrbxl/shoes6.png?rlkey=x2b9ag7h0aculxqygamyo6hyt&dl=0",
+        "brand": "Converse",
+        "title": "Converse Chuck Taylor",
+        "color": "#e86f35",
+        "discountedPrice": 799,
+        "price": 2299,
+        "discountPersent": 99,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 30
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 100,
+        "topLavelCategory": "Women",
+        "secondLavelCategory": "Shoe",
+        "thirdLavelCategory": "women_converse",
+        "description": "The Converse Chuck Taylor is a stylish and comfortable shoe."
+    },
+    {
+        "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/h2s8lsscd59by5ml1wkek/shoes7.png?rlkey=kiz7gcs4tb7recfvwchv2iti9&dl=0",
+        "brand": "Vans",
+        "title": "Vans Old Skool",
+        "color": "#fe1c22",
+        "discountedPrice": 399,
+        "price": 1299,
+        "discountPersent": 29,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 30
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 100,
+        "topLavelCategory": "Women",
+        "secondLavelCategory": "Shoe",
+        "thirdLavelCategory": "women_vans",
+        "description": "The Vans Old Skool is a stylish and comfortable shoe."
+    },
+    {
+        "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/dq4u2on2xbhdq557tzu99/shoes8.png?rlkey=r54nllj6ff44e1wws2xerbmc4&dl=0",
+        "brand": "Under Armour",
+        "title": "Under Armour HOVR",
+        "color": "#636162",
+        "discountedPrice": 199,
+        "price": 1199,
+        "discountPersent": 69,
+        "size": [
+            {
+                "name": "S",
+                "quantity": 20
+            },
+            {
+                "name": "M",
+                "quantity": 30
+            },
+            {
+                "name": "L",
+                "quantity": 50
+            }
+        ],
+        "quantity": 100,
+        "topLavelCategory": "Men",
+        "secondLavelCategory": "Shoe",
+        "thirdLavelCategory": "men_under_armour",
+        "description": "The Under Armour HOVR is a stylish and comfortable shoe."
+    }
+]
