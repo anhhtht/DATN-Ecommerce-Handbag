@@ -28,7 +28,7 @@ public class AppConfig {
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
         .authorizeHttpRequests(authorize -> authorize
         	    // Các request dưới đây được phép truy cập mà không cần xác thực
-        	    .requestMatchers("/api/products/**", "/api/payment/**", "/api/reviews/product/**").permitAll()
+        	    .requestMatchers("/api/products/**", "/api/payment/**", "/api/reviews/product/**","/api/auth/sendEmail").permitAll()
         	    // Các request còn lại yêu cầu xác thực
         	    .requestMatchers("/api/**").authenticated()
         	    // Phân quyền cho từng role

@@ -48,22 +48,24 @@ public class User {
     public User() {
     }
 
+   
     public User(Long id, String firstName, String lastName, String password, String email, String role, String mobile,
-            List<Address> addresses,
-            List<Review> reviews, LocalDateTime createAt) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.password = password;
-        this.email = email;
-        this.role = role;
-        this.mobile = mobile;
-        this.addresses = addresses;
-        this.reviews = reviews;
-        this.createAt = createAt;
-    }
+			List<Address> addresses, List<Review> reviews, LocalDateTime createAt) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.password = password;
+		this.email = email;
+		this.role = role;
+		this.mobile = mobile;
+		this.addresses = addresses;
+		this.reviews = reviews;
+		this.createAt = createAt;
+	}
 
-    public Long getId() {
+
+	public Long getId() {
         return id;
     }
 
@@ -142,4 +144,6 @@ public class User {
         this.createAt = createAt;
     }
 
+
+    
 }

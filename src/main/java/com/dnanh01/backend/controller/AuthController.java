@@ -1,7 +1,9 @@
 package com.dnanh01.backend.controller;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -11,8 +13,10 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dnanh01.backend.config.JwtProvider;
@@ -22,10 +26,15 @@ import com.dnanh01.backend.model.Cart;
 import com.dnanh01.backend.model.User;
 import com.dnanh01.backend.repository.UserRepository;
 import com.dnanh01.backend.request.ChangePasswordRequest;
+import com.dnanh01.backend.request.EmailRequest;
 import com.dnanh01.backend.request.LoginRequest;
 import com.dnanh01.backend.response.AuthResponse;
 import com.dnanh01.backend.service.CartService;
 import com.dnanh01.backend.service.CustomerUserServiceImplementation;
+import com.dnanh01.backend.service.EmailService;
+
+import ch.qos.logback.core.util.Duration;
+import jakarta.mail.MessagingException;
 
 @RestController
 @RequestMapping("/auth")
@@ -36,18 +45,20 @@ public class AuthController {
     private PasswordEncoder passwordEncoder;
     private CustomerUserServiceImplementation customerUserService;
     private CartService cartService;
-
+    private EmailService emailService;
     public AuthController(
             UserRepository userRepository,
             CustomerUserServiceImplementation customerUserService,
             PasswordEncoder passwordEncoder,
             JwtProvider jwtProvider,
-            CartService cartService) {
+            CartService cartService,
+            EmailService emailService) {
         this.userRepository = userRepository;
         this.customerUserService = customerUserService;
         this.passwordEncoder = passwordEncoder;
         this.jwtProvider = jwtProvider;
         this.cartService = cartService;
+        this.emailService = emailService;
     }
 
     @PostMapping("/signup")
@@ -94,6 +105,15 @@ public class AuthController {
         return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.CREATED);
     }
 
+    
+    @PutMapping("/sendEmail")
+    public String sendEmail(@RequestBody EmailRequest emailRequest) throws MessagingException {
+        String password = emailRequest.getPass();
+        // Gửi email bằng password (password sẽ được truyền từ client)
+        emailService.sendOtpEmail("daongocanh20052002@gmail.com");
+        return "Email sent successfully!";
+    }
+    
     @PostMapping("/signin")
     public ResponseEntity<AuthResponse> loginUserHandler(@RequestBody LoginRequest loginRequest)
             throws UserException {
@@ -119,7 +139,7 @@ public class AuthController {
 
         return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.CREATED);
     }
-
+    
     private Authentication authenticate(String userName, String password) {
         UserDetails userDetails = customerUserService.loadUserByUsername(userName);
 
@@ -132,7 +152,7 @@ public class AuthController {
         }
         return new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
     }
-
+    
     
     
 }

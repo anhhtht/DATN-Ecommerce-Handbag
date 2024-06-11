@@ -27,7 +27,7 @@ public class OrderItem {
     private String color;
 
     private int quantity;
-
+    
     private Integer price;
 
     private Integer discountedPrice;
